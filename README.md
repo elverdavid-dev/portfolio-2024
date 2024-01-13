@@ -20,7 +20,7 @@
 ## Cómo Contactarme
 
 - [LinkedIn](https://www.linkedin.com/in/elver-peñate)
-- [Correo Electrónico](elverdavid0839@gmail.com)
+- [Correo Electrónico](mailto:elverdavid0839@gmail.com)
 - [Sitio Web Personal](https://www.elvportafolio.website/)
 
 ¡Gracias por visitar mi portafolio! Estoy emocionado de compartir mi viaje en el desarrollo web contigo.
