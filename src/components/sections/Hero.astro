@@ -1,0 +1,29 @@
+---
+import Badge from '../Badge.astro'
+import SocialLink from '../SocialLink.astro'
+---
+
+<section class="flex lg:flex-row flex-col relative">
+  <div class="lg:max-w-2xl lg:mt-32 mt-16 animate-fade-up">
+    <Badge />
+    <h1 class="font-onest font-bold text-6xl text-balance tracking-tight">
+      Elver David Peñate
+    </h1>
+
+    <h2
+      class="text-primary font-onest font-semibold capitalize text-2xl tracking-tight"
+    >
+      Desarrollador web
+    </h2>
+
+    <p class="text-balance text-slate-300 pt-3 leading-relaxed">
+      Soy desarrollador web con experiencia en tecnologías como React, Next.js,
+      Tailwind CSS y Node.js <span class="text-white"
+        >Mi enfoque se centra en crear soluciones web innovadoras y atractivas.</span
+      > Descubre mi trabajo y mi dedicación a través de mi portafolio.
+    </p>
+
+    <SocialLink />
+  </div>
+  <img src="/icon-hero.svg" alt="icon hero" width="680" class="mt-10 md:mt-0" />
+</section>

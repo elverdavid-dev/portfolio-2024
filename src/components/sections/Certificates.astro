@@ -1,0 +1,69 @@
+---
+import {
+  CertificatesData,
+  type CertificateInterface
+} from '@/utils/CertificateData'
+import { Icon } from 'astro-icon/components'
+import Subtitle from '../Subtitle.astro'
+---
+
+<section class="py-32">
+  <Subtitle><Icon name="tabler:certificate" size={40} /> Certificados</Subtitle>
+  <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-3 mt-10">
+    {
+      CertificatesData.map(
+        ({
+          name,
+          course,
+          nameUniversity,
+          urlImage,
+          urlPdf
+        }: CertificateInterface) => (
+          <div class="pb-3  bg-transparent border-slate-700  border  rounded-lg">
+            <img
+              src={urlImage}
+              width="410"
+              height="320"
+              alt={name}
+              class="rounded-xl p-2 lg:w-full"
+            />
+            <div class="px-2 space-y-2 mt-3">
+              <span class="text-slate-200 flex items-start  gap-x-1">
+                <Icon
+                  name="tabler:map-pin"
+                  size={20}
+                  class="mt-1 text-slate-300"
+                />
+                <span class="flex-1 text-slate-300">
+                  <b class="text-white text-balance">Otorgado por :</b>{' '}
+                  {nameUniversity}
+                </span>
+              </span>
+              <span class="text-slate-200 flex items-start  gap-x-1">
+                <Icon
+                  name="tabler:certificate"
+                  size={20}
+                  class="text-slate-300"
+                />
+                <span class="flex-1 text-slate-300">
+                  <b class="text-white text-balance">Nombre : </b>
+                  {course}
+                </span>
+              </span>
+              <div class="flex justify-end pt-2">
+                <a
+                  href={urlPdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-x-1 text-primary hover:text-primary/60 transition-all"
+                >
+                  Ver Certificado <Icon name="tabler:external-link" size={18} />
+                </a>
+              </div>
+            </div>
+          </div>
+        )
+      )
+    }
+  </section>
+</section>

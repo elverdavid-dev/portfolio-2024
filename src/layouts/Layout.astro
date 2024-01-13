@@ -1,0 +1,52 @@
+---
+import Footer from '@/components/sections/Footer.astro'
+import Navbar from '@/components/sections/Navbar.astro'
+// Supports weights 100-900
+import '@fontsource-variable/onest'
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="¡Hola! Soy Elver David Peñate, un apasionado desarrollador web especializado en tecnologías como React, Next.js, y Node.js. Mi enfoque se centra en crear experiencias web intuitivas y dinámicas. Con habilidades en diseño utilizando Tailwind CSS y experiencia en desarrollo backend con Node.js, busco constantemente la excelencia técnica para ofrecer soluciones innovadoras y eficientes. ¡Explora mi portafolio para descubrir cómo puedo ayudarte a llevar tus proyectos web al siguiente nivel!"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon2.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>
+      Elver David Peñate | Desarrollador web especializado en ReactJs,NextJs y
+      NodeJs
+    </title>
+  </head>
+  <body>
+    <Navbar />
+    <main class="md:mx-auto container px-2">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  body {
+    background-color: #0d1117;
+    color: white;
+    font-family: 'Onest Variable', sans-serif, system-ui;
+  }
+
+  .Navbar-animation {
+    animation: animate-navbar linear both;
+    animation-timeline: scroll(root);
+    animation-range: 300px;
+  }
+
+  @keyframes animate-navbar {
+    to {
+      background-color: rgba(13, 17, 23, 0.5);
+      backdrop-filter: blur(5px);
+    }
+  }
+</style>
