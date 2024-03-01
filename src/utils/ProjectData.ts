@@ -3,14 +3,23 @@ export interface ProjectInterface {
   description: string
   urlImage: string
   urlGithub: string
-  urlWeb: string
+  urlWeb: string | null
 }
 
 export const ProjectData: ProjectInterface[] = [
   {
+    name: 'ChathubAi',
+    description:
+      'Estoy trabajando en el desarrollo de un chatbot que utiliza la tecnología de inteligencia artificial de OpenAI. Aunque todavía está en proceso de desarrollo, este chatbot utiliza el modelo GPT-4 para interactuar y responder preguntas de manera inteligente. ¡Estoy emocionado por seguir mejorándolo!',
+    urlImage:
+      'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/portafolio-images/aq5mly6klp2grdmz1few',
+    urlGithub: 'https://github.com/ElverDavid07/chathub-ai',
+    urlWeb: null
+  },
+  {
     name: 'GlobalFood',
     description:
-      'Una plataforma de recetas desarrollada usando Next.js, TypeScript y Tailwind CSS en el frontend, junto con mi propia API. Ofrece búsquedas por nombre, categoría o país, y brinda información completa de cada receta. Esta creación demuestra mi habilidad para construir soluciones web interactivas y funcionales.',
+      'Desarrollé una plataforma donde puedes encontrar recetas deliciosas de todo el mundo. Puedes buscar recetas por su nombre, el tipo de comida o el país de origen. Cada receta viene con detalles completos, como los ingredientes y las instrucciones paso a paso para cocinarla.',
     urlImage:
       'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/portafolio-images/gxnlh9gwj5v2obt7eaj9',
     urlGithub: 'https://github.com/ElverDavid07/Project_Recipe_Page',
@@ -19,7 +28,7 @@ export const ProjectData: ProjectInterface[] = [
   {
     name: 'Recipes Api',
     description:
-      'Sistema de gestión de recetas, creado con Nest.js y MongoDB, ofrece funciones diversas como visualizar todas las recetas, buscar por nombre, ver recetas por categoría,ver las últimas recetas agregadas. Entre otras más funciones, incluye paginación y validación de datos para una operación segura y eficiente.',
+      'Desarrollé un sistema en línea para gestionar recetas de cocina. Con esta herramienta, puedes buscar recetas por nombre, explorar diferentes categorías de platos y ver las últimas recetas agregadas. Además, incluye características como paginación para navegar fácilmente por las recetas y validación de datos para garantizar que la información sea precisa y segura.',
     urlImage:
       'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/ljmt4nqma96xphu7iwfc',
     urlGithub: 'https://github.com/ElverDavid07/Recipes-api',
@@ -28,19 +37,11 @@ export const ProjectData: ProjectInterface[] = [
   {
     name: 'Landing page',
     description:
-      'Diseño de Landig page, Con un enfoque en la estética y la experiencia del usuario.El diseño es optimizado y responsive, asegurando una visualización perfecta en diferentes dispositivos. ',
+      'Página de inicio con un diseño enfocado en la apariencia y la facilidad de uso. Esta página está diseñada para ser atractiva visualmente y brindar una experiencia óptima para los visitantes. Fue uno de mis primeros proyectos ',
     urlImage:
       'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/portafolio-images/qakx2xxajxda2xu0kl5b',
     urlGithub: 'https://github.com/ElverDavid07/Landing_Page',
     urlWeb: 'https://landing-page-psi-flax.vercel.app'
   },
-  {
-    name: 'Página web informativa',
-    description:
-      'Este proyecto es una página web informativa sobre una compañía exportadora de frutas. En esta página, los usuarios pueden encontrar información sobre la compañía, sus productos y cómo contactarlos. Es importante señalar que esta página no es oficial de la compañía, sino que fue creada por mí como parte de la puesta en práctica de mis conocimientos y habilidades en el desarrollo web.',
-    urlImage:
-      'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/portafolio-images/m7joilzbzayoukxvvqho',
-    urlGithub: 'https://github.com/ElverDavid07/static-page',
-    urlWeb: 'https://www.colfrutas.site'
-  }
+
 ]
