@@ -4,6 +4,7 @@ export interface ProjectInterface {
   urlImage: string
   urlGithub: string
   urlWeb: string | null
+  stack?:string[]
 }
 
 export const ProjectData: ProjectInterface[] = [
@@ -14,7 +15,8 @@ export const ProjectData: ProjectInterface[] = [
     urlImage:
       'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/portafolio-images/aq5mly6klp2grdmz1few',
     urlGithub: 'https://github.com/ElverDavid07/chathub-ai',
-    urlWeb: null
+    urlWeb: null,
+    stack:["icons/next.svg","icons/tailwind.svg","icons/typescript.svg"]
   },
   {
     name: 'GlobalFood',
@@ -23,7 +25,8 @@ export const ProjectData: ProjectInterface[] = [
     urlImage:
       'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/portafolio-images/gxnlh9gwj5v2obt7eaj9',
     urlGithub: 'https://github.com/ElverDavid07/Project_Recipe_Page',
-    urlWeb: 'https://www.globalfood.site'
+    urlWeb: 'https://www.globalfood.site',
+    stack:["icons/next.svg","icons/tailwind.svg","icons/typescript.svg"]
   },
   {
     name: 'Recipes Api',
@@ -32,7 +35,8 @@ export const ProjectData: ProjectInterface[] = [
     urlImage:
       'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/ljmt4nqma96xphu7iwfc',
     urlGithub: 'https://github.com/ElverDavid07/Recipes-api',
-    urlWeb: 'https://www.recipesapi.online/docs'
+    urlWeb: 'https://www.recipesapi.online/docs',
+    stack:["icons/nestjs.svg","icons/mongodb.svg","icons/typescript.svg"]
   },
   {
     name: 'Landing page',
@@ -41,7 +45,8 @@ export const ProjectData: ProjectInterface[] = [
     urlImage:
       'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/portafolio-images/qakx2xxajxda2xu0kl5b',
     urlGithub: 'https://github.com/ElverDavid07/Landing_Page',
-    urlWeb: 'https://landing-page-psi-flax.vercel.app'
+    urlWeb: 'https://landing-page-psi-flax.vercel.app',
+    stack:["icons/astro.svg","icons/tailwind.svg","icons/typescript.svg"]
   },
 
 ]
