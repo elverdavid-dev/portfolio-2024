@@ -8,4 +8,8 @@ import sitemap from '@astrojs/sitemap'
 export default defineConfig({
 	integrations: [tailwind(), icon(), sitemap()],
 	site: 'https://www.elvportafolio.website',
+	image: {
+		domains: ['astro.build'],
+		remotePatterns: [{ protocol: 'https', hostname: 'res.cloudinary.com' }],
+	},
 })
