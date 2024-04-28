@@ -1,8 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components'
 import {
-  TechnologiesData,
-  type TechnologiesInterface
+	TechnologiesData,
+	type TechnologiesInterface,
 } from '../../utils/TechnologiesData'
 import Subtitle from '../Subtitle.astro'
 ---
@@ -14,7 +14,7 @@ import Subtitle from '../Subtitle.astro'
   >
     {
       TechnologiesData.map(({ name, link }: TechnologiesInterface) => (
-        <div class=" rounded-md py-4 border border-slate-700 flex items-center flex-col gap-y-1 group hover:bg-white/5 duration-300 ease-in">
+        <div class=" rounded-xl py-4 border border-slate-700 flex items-center flex-col gap-y-1 group hover:bg-white/5 duration-300 ease-in">
           <img
             src={link}
             alt={name}

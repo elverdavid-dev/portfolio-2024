@@ -1,8 +1,7 @@
 ---
-import Footer from '../components/sections/Footer.astro'
-import Navbar from '../components/sections/Navbar.astro'
 // Supports weights 100-900
 import '@fontsource-variable/onest'
+import Navbar from '../components/sections/Navbar.astro'
 ---
 
 <!doctype html>
@@ -22,8 +21,8 @@ import '@fontsource-variable/onest'
       NodeJs"
     />
     <title>
-      Portafolio de Elver David Peñate -  Desarrollador web especializado en ReactJs,NextJs y
-      NodeJs
+      Portafolio de Elver David Peñate - Desarrollador web especializado en
+      ReactJs,NextJs y NodeJs
     </title>
 
     <!-- Metadata descriptions -->
@@ -70,31 +69,33 @@ import '@fontsource-variable/onest'
     <meta name="generator" content={Astro.generator} />
   </head>
   <body>
+    <div
+      class="absolute top-0 z-[-2] w-screen bg-gray-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+    >
       <Navbar />
       <main class="md:mx-auto container px-2">
         <slot />
       </main>
-      <Footer />
+    </div>
   </body>
-</html>
 
-<style is:global>
-  body {
-    background-color: #0d1117;
-    color: white;
-    font-family: 'Onest Variable', sans-serif, system-ui;
-  }
-
-  .Navbar-animation {
-    animation: animate-navbar linear both;
-    animation-timeline: scroll(root);
-    animation-range: 300px;
-  }
-
-  @keyframes animate-navbar {
-    to {
-      background-color: rgba(13, 17, 23, 0.5);
-      backdrop-filter: blur(5px);
+  <style is:global>
+    body {
+      color: white;
+      font-family: "Onest Variable", sans-serif, system-ui;
     }
-  }
-</style>
+
+    .Navbar-animation {
+      animation: animate-navbar linear both;
+      animation-timeline: scroll(root);
+      animation-range: 300px;
+    }
+
+    @keyframes animate-navbar {
+      to {
+        background-color: rgba(13, 17, 23, 0.5);
+        backdrop-filter: blur(5px);
+      }
+    }
+  </style>
+</html>

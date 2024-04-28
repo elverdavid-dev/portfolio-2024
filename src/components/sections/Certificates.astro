@@ -1,14 +1,17 @@
 ---
 import { Icon } from 'astro-icon/components'
 import {
-  CertificatesData,
-  type CertificateInterface
+	type CertificateInterface,
+	CertificatesData,
 } from '../../utils/CertificateData'
 import Subtitle from '../Subtitle.astro'
 ---
 
 <section class="py-32">
-  <Subtitle><Icon name="tabler:certificate" size={40} /> Certificados</Subtitle>
+  <Subtitle>
+    <Icon name={"tabler:certificate"} />
+    Certificados</Subtitle
+  >
   <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-3 mt-10">
     {
       CertificatesData.map(
@@ -17,15 +20,15 @@ import Subtitle from '../Subtitle.astro'
           course,
           nameUniversity,
           urlImage,
-          urlPdf
+          urlPdf,
         }: CertificateInterface) => (
-          <div class="pb-3  bg-transparent border-slate-700  border  rounded-lg">
+          <div class="pb-3">
             <img
               src={urlImage}
               width="410"
               height="320"
               alt={name}
-              class="rounded-xl p-2 lg:w-full"
+              class="rounded-2xl p-2 lg:w-full"
             />
             <div class="px-2 space-y-2 mt-3">
               <span class="text-slate-200 flex items-start  gap-x-1">
@@ -35,7 +38,7 @@ import Subtitle from '../Subtitle.astro'
                   class="mt-1 text-slate-300"
                 />
                 <span class="flex-1 text-slate-300">
-                  <b class="text-white text-balance">Otorgado por :</b>{' '}
+                  <b class="text-white text-balance">Otorgado por :</b>{" "}
                   {nameUniversity}
                 </span>
               </span>
@@ -62,7 +65,7 @@ import Subtitle from '../Subtitle.astro'
               </div>
             </div>
           </div>
-        )
+        ),
       )
     }
   </section>
