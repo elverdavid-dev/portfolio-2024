@@ -1,8 +1,9 @@
 ---
-import { Icon } from 'astro-icon/components'
-import { ProjectData, type ProjectInterface } from '../../utils/ProjectData'
-import { cn } from '../../utils/util'
-import Subtitle from '../Subtitle.astro'
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import { ProjectData, type ProjectInterface } from "../../utils/ProjectData";
+import { cn } from "../../utils/util";
+import Subtitle from "../Subtitle.astro";
 ---
 
 <section class="mt-32">
@@ -21,7 +22,7 @@ import Subtitle from '../Subtitle.astro'
           stack,
         }: ProjectInterface) => (
           <div class="pb-3">
-            <img
+            <Image
               src={urlImage}
               width="410"
               height="320"
@@ -30,22 +31,24 @@ import Subtitle from '../Subtitle.astro'
             />
             <h2 class="text-center font-onest font-semibold text-xl">{name}</h2>
             <p class="text-pretty p-2 text-slate-300 px-2">{description}</p>
-            <div class="flex items-center gap-x-2 px-2">
-              {stack?.map((img) => (
-                <div class="p-1 rounded-lg bg-white/5">
-                  <img
-                    src={img}
-                    alt="icons"
-                    width="20"
-                    height="20"
-                    class="rounded-sm"
-                  />
-                </div>
-              ))}
-            </div>
+            {
+              <div class="flex items-center gap-x-2 px-2">
+                {stack?.map((img) => (
+                  <div class="p-1 rounded-lg bg-white/5">
+                    <Image
+                      src={img}
+                      alt="icons"
+                      width="20"
+                      height="20"
+                      class="rounded-sm"
+                    />
+                  </div>
+                ))}
+              </div>
+            }
             <div class="flex items-center gap-x-3 justify-end px-3">
               <a
-                href={urlGithub}
+                href={urlGithub ?? "/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 class={cn(
@@ -57,7 +60,7 @@ import Subtitle from '../Subtitle.astro'
                 <span>Ver codigo</span>
               </a>
               <a
-                href={urlWeb}
+                href={urlWeb ?? "/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 class={cn(

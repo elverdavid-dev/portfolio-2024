@@ -1,10 +1,18 @@
+import astroIcon from '@/assets/icons/astro.svg'
+import mongodbIcon from '@/assets/icons/mongodb.svg'
+import nestIcon from '@/assets/icons/nestjs.svg'
+import nextIcon from '@/assets/icons/next.svg'
+import tailwindIcon from '@/assets/icons/tailwind.svg'
+import typescriptIcon from '@/assets/icons/typescript.svg'
+
+import type { ImageMetadata } from 'astro'
 export interface ProjectInterface {
 	name: string
 	description: string
 	urlImage: string
 	urlGithub?: string
 	urlWeb?: string
-	stack?: string[]
+	stack?: ImageMetadata[]
 }
 
 export const ProjectData: ProjectInterface[] = [
@@ -14,7 +22,7 @@ export const ProjectData: ProjectInterface[] = [
 			'Este es un proyecto personal en desarrollo, una plataforma de delivery de alimentos, diseñada específicamente para un restaurante. En esta plataforma, los usuarios podrán explorar el menú del restaurante y realizar pedidos directamente desde la comodidad de su hogar.',
 		urlImage:
 			'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/portafolio-images/sh9kvs69jigy4fwyhjro',
-		stack: ['icons/next.svg', 'icons/tailwind.svg', 'icons/typescript.svg'],
+		stack: [nextIcon, tailwindIcon, typescriptIcon],
 	},
 	{
 		name: 'GlobalFood',
@@ -24,7 +32,7 @@ export const ProjectData: ProjectInterface[] = [
 			'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/portafolio-images/zvefq7w4x4uheqpquzt8',
 		urlGithub: 'https://github.com/ElverDavid07/Project_Recipe_Page',
 		urlWeb: 'https://www.globalfood.site',
-		stack: ['icons/next.svg', 'icons/tailwind.svg', 'icons/typescript.svg'],
+		stack: [nextIcon, tailwindIcon, typescriptIcon],
 	},
 	{
 		name: 'Recipes Api',
@@ -34,7 +42,7 @@ export const ProjectData: ProjectInterface[] = [
 			'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/ljmt4nqma96xphu7iwfc',
 		urlGithub: 'https://github.com/ElverDavid07/Recipes-api',
 		urlWeb: 'https://www.recipesapi.online/docs',
-		stack: ['icons/nestjs.svg', 'icons/mongodb.svg', 'icons/typescript.svg'],
+		stack: [nestIcon, mongodbIcon, typescriptIcon],
 	},
 	{
 		name: 'Landing page',
@@ -44,6 +52,6 @@ export const ProjectData: ProjectInterface[] = [
 			'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/portafolio-images/qakx2xxajxda2xu0kl5b',
 		urlGithub: 'https://github.com/ElverDavid07/Landing_Page',
 		urlWeb: 'https://landing-page-psi-flax.vercel.app',
-		stack: ['icons/astro.svg', 'icons/tailwind.svg', 'icons/typescript.svg'],
+		stack: [astroIcon, tailwindIcon, typescriptIcon],
 	},
 ]

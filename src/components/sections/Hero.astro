@@ -1,6 +1,8 @@
 ---
-import Badge from '../Badge.astro'
-import SocialLink from '../SocialLink.astro'
+import { Image } from "astro:assets";
+import IconHero from "@/assets/icon-hero.svg";
+import Badge from "../Badge.astro";
+import SocialLink from "../SocialLink.astro";
 ---
 
 <section class="flex lg:flex-row flex-col relative">
@@ -24,5 +26,12 @@ import SocialLink from '../SocialLink.astro'
 
     <SocialLink />
   </div>
-  <img src="/icon-hero.svg" alt="icon hero" width="680" class="mt-10 md:mt-0" />
+  <Image
+    src={IconHero}
+    loading="lazy"
+    decoding="async"
+    alt="icon hero"
+    width="680"
+    class="mt-10 md:mt-0"
+  />
 </section>

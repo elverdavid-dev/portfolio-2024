@@ -1,70 +1,72 @@
+import astroIcon from '@/assets/icons/astro.svg'
+import cssIcon from '@/assets/icons/css.svg'
+import gitIcon from '@/assets/icons/git.svg'
+import htmlIcon from '@/assets/icons/html.svg'
+import javascriptIcon from '@/assets/icons/js.svg'
+import mongodbIcon from '@/assets/icons/mongodb.svg'
+import nestIcon from '@/assets/icons/nestjs.svg'
+import nextIcon from '@/assets/icons/next.svg'
+import nodeIcon from '@/assets/icons/node.svg'
+import reactIcon from '@/assets/icons/react.svg'
+import tailwindIcon from '@/assets/icons/tailwind.svg'
+import typescriptIcon from '@/assets/icons/typescript.svg'
+
+import type { ImageMetadata } from 'astro'
 export interface TechnologiesInterface {
 	name: string
-	link: string
+	icon: ImageMetadata
 }
 
 export const TechnologiesData: TechnologiesInterface[] = [
 	{
-		name: 'React.js',
-		link: 'icons/react.svg',
-	},
-	{
 		name: 'Typescript',
-		link: 'icons/typescript.svg',
-	},
-	{
-		name: 'Node.js',
-		link: 'icons/node.svg',
-	},
-	{
-		name: 'Astro.js',
-		link: 'icons/astro.svg',
+		icon: typescriptIcon,
 	},
 	{
 		name: 'Next.js',
-		link: 'icons/next.svg',
+		icon: nextIcon,
 	},
 	{
 		name: 'Nest.js',
-		link: 'icons/nestjs.svg',
+		icon: nestIcon,
 	},
 	{
 		name: 'Tailwind css',
-		link: 'icons/tailwind.svg',
+		icon: tailwindIcon,
+	},
+	{
+		name: 'Astro.js',
+		icon: astroIcon,
+	},
+	{
+		name: 'React.js',
+		icon: reactIcon,
+	},
+	{
+		name: 'Node.js',
+		icon: nodeIcon,
 	},
 	{
 		name: 'Javascript',
-		link: 'icons/js.svg',
+		icon: javascriptIcon,
 	},
 	{
 		name: 'Css3',
-		link: 'icons/css.svg',
+		icon: cssIcon,
 	},
 	{
 		name: 'Html5',
-		link: 'icons/html.svg',
+		icon: htmlIcon,
 	},
 
 	{
 		name: 'Mongodb',
-		link: 'icons/mongodb.svg',
+		icon: mongodbIcon,
 	},
 
 	{
 		name: 'Git',
-		link: 'icons/git.svg',
+		icon: gitIcon,
 	},
 
-	{
-		name: 'Mysql',
-		link: 'icons/mysql.svg',
-	},
-	{
-		name: 'Prisma',
-		link: 'icons/prisma.svg',
-	},
-	{
-		name: 'Express.js',
-		link: 'icons/express.svg',
-	},
 ]
