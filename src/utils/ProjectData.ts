@@ -29,7 +29,7 @@ export const ProjectData: ProjectInterface[] = [
 		description:
 			'Desarrollé una plataforma donde puedes encontrar recetas deliciosas de todo el mundo. Puedes buscar recetas por su nombre, el tipo de comida o el país de origen. Cada receta viene con detalles completos, como los ingredientes y las instrucciones paso a paso para cocinarla.',
 		urlImage:
-			'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/portafolio-images/zvefq7w4x4uheqpquzt8',
+			'https://res.cloudinary.com/dnbdpnvz1/image/upload/f_auto,q_auto/v1/images_project/portafolio-images/enhone6togoeczjwslsk',
 		urlGithub: 'https://github.com/ElverDavid07/Project_Recipe_Page',
 		urlWeb: 'https://www.globalfood.site',
 		stack: [nextIcon, tailwindIcon, typescriptIcon],
