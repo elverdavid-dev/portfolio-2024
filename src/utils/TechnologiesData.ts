@@ -68,5 +68,4 @@ export const TechnologiesData: TechnologiesInterface[] = [
 		name: 'Git',
 		icon: gitIcon,
 	},
-
 ]
